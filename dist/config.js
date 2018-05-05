@@ -4,7 +4,7 @@ window.__INITIAL_STATE__ = {
 		goals: [
 			{
 				id: 30,
-				hed: 'Within the next <placeholder:30> days I will:',
+				title: 'Within the next <placeholder:30> days I will:',
 				items: [
 					{
 						title: 'Complete Task A',
@@ -14,7 +14,7 @@ window.__INITIAL_STATE__ = {
 			},
 			{
 				id: 60,
-				hed: 'Within the next <placeholder:60> days I will:',
+				title: 'Within the next <placeholder:60> days I will:',
 				items: [
 					{
 						title: 'Complete Task B',
@@ -24,7 +24,7 @@ window.__INITIAL_STATE__ = {
 			},
 			{
 				id: 90,
-				hed: 'Within the next <placeholder:90> days I will:',
+				title: 'Within the next <placeholder:90> days I will:',
 				items: [
 					{
 						title: 'Complete Task C',
