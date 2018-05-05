@@ -1,0 +1,11 @@
+{
+  "name": "30-60-90",
+  "version": "0.0.0",
+  "description": "30/60/90 is a simple RiotJS application which reads in and displays information about personal goals to be completed within the next 30, 60, and 90 days.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse R Mykolyn",
+  "license": "ISC"
+}
