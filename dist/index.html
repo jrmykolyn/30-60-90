@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>30/60/90</title>
+		<style>
+			*,
+			*::before,
+			*::after {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			html {
+				background: #efefef;
+				font-size: 62.5%;
+			}
+
+			body {
+				font-size: 1.6rem;
+				color: #333;
+				padding: 3rem;
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- GET CONFIG. -->
+		<script src="./config.js"></script>
+
+		<!-- DEFINE APP ENTRY/MOUNT POINT -->
+		<app></app>
+
+		<!-- GET DEPENDENCIES -->
+		<script src="./tags/app.tag" type="riot/tag"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.9.4/riot+compiler.min.js"></script>
+
+		<!-- MOUNT APP -->
+		<script>
+			riot.mount( 'app', __INITIAL_STATE__ );
+		</script>
+	</body>
+</html>
