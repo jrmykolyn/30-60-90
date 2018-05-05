@@ -37,10 +37,16 @@
 		}
 
 		main {
-			width: 90%;
+			width: 80%;
 			max-width: 96rem;
 			margin: 0 auto;
-			padding: 3rem 0;
+			padding: 6rem 0;
+		}
+
+		@media ( min-width: 768px ) {
+			main {
+				padding: 3rem 0;
+			}
 		}
 	</style>
 </app>

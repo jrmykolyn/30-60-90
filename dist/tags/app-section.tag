@@ -24,7 +24,7 @@
 		}
 
 		app-section:not( :last-child ) {
-			margin-bottom: 3rem;
+			margin-bottom: 6rem;
 		}
 
 		section {
@@ -33,7 +33,8 @@
 			background: #fff;
 			box-shadow: 0 0.3rem 2rem -0.5rem rgba( 0, 0, 0, 0.1 );
 			margin: 0 auto;
-			padding: 5rem 5rem 5rem 7rem;
+			padding: 3rem;
+			padding-top: 4rem;
 			position: relative;
 		}
 
@@ -50,8 +51,8 @@
 		}
 
 		.id-wrapper {
-			width: 8rem;
-			height: 8rem;
+			width: 6rem;
+			height: 6rem;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -60,8 +61,8 @@
 			border-radius: 50%;
 			box-shadow: 0 0.3rem 2rem -0.5rem rgba( 0, 0, 0, 0.15 );
 			position: absolute;
-			top: 50%;
-			left: 0;
+			top: 0;
+			left: 50%;
 			transform: translate( -50%, -50% );
 		}
 
@@ -95,6 +96,24 @@
 
 		.checkbox-wrapper.is-complete .checkbox::after {
 			content: '\2713'; /* Unicode checkmark */
+		}
+
+		@media ( min-width: 768px ) {
+			app-section:not( :last-child ) {
+				margin-bottom: 3rem;
+			}
+
+			section {
+				padding: 4rem;
+				padding-left: 7rem;
+			}
+
+			.id-wrapper {
+				width: 8rem;
+				height: 8rem;
+				top: 50%;
+				left: 0;
+			}
 		}
 	</style>
 </app-section>
