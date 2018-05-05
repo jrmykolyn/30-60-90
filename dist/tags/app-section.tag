@@ -33,7 +33,7 @@
 			background: #fff;
 			box-shadow: 0 0.3rem 2rem -0.5rem rgba( 0, 0, 0, 0.1 );
 			margin: 0 auto;
-			padding: 3rem;
+			padding: 2.5rem;
 			padding-top: 4rem;
 			position: relative;
 		}
@@ -56,7 +56,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background: #5352ed;
+			background: #3c40c6;
 			color: white;
 			border-radius: 50%;
 			box-shadow: 0 0.3rem 2rem -0.5rem rgba( 0, 0, 0, 0.15 );
@@ -89,9 +89,12 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			flex-shrink: 0;
 			border: solid 0.2rem #999;
 			border-radius: 50%;
 			margin-right: 1rem;
+			padding-top: 1px; /* Nudge for checkmark */
+			padding-left: 1px;
 		}
 
 		.checkbox-wrapper.is-complete .checkbox::after {
