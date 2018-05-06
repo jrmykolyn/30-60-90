@@ -44,44 +44,4 @@
 			return ( ms / 1000 / 60 / 60 / 24 );
 		};
 	</script>
-
-	<style>
-		app {
-			display: block;
-			width: 100%;
-		}
-
-		.header,
-		.footer {
-			background: white;
-		}
-
-		.header__inner,
-		.footer__inner {
-			width: 80%;
-			max-width: 96rem;
-			margin: 0 auto;
-			padding: 4rem 0;
-		}
-
-		.header h1 {
-			margin-bottom: 1rem;
-		}
-
-		main {
-			width: 80%;
-			max-width: 96rem;
-			margin: 0 auto;
-			padding: 6rem 0;
-		}
-
-		.footer {
-			color: #3c40c6;
-			background: transparent;
-		}
-
-		.footer__inner {
-			padding: 2rem 0;
-		}
-	</style>
 </app>

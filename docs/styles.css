@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  background: #dfe8f3;
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.2rem;
+  color: #222;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1,
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600; }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.6rem; } }
+
+app {
+  display: block;
+  width: 100%; }
+
+.header,
+.footer {
+  background: white; }
+
+.header__inner,
+.footer__inner {
+  width: 80%;
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 4rem 0; }
+
+.header h1 {
+  margin-bottom: 1rem; }
+
+main {
+  width: 80%;
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 6rem 0; }
+
+.footer {
+  color: #3c40c6;
+  background: transparent; }
+
+.footer__inner {
+  padding: 2rem 0; }
+
+app-section {
+  display: block; }
+
+app-section:not(:last-child) {
+  margin-bottom: 6rem; }
+
+section {
+  width: 100%;
+  display: block;
+  background: #fff;
+  box-shadow: 0 0.3rem 2rem -0.5rem rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 2.5rem;
+  padding-top: 4rem;
+  position: relative; }
+
+ul {
+  list-style: none; }
+
+ul li:not(:last-child) {
+  margin-bottom: 1rem; }
+
+h2 {
+  margin-bottom: 1rem; }
+
+.id-wrapper {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3c40c6;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 0.3rem 2rem -0.5rem rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.id-wrapper * {
+  margin: 0; }
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center; }
+
+.checkbox-wrapper.is-complete {
+  color: #20bf6b; }
+
+.checkbox-wrapper.is-complete .checkbox {
+  border-color: #20bf6b; }
+
+.checkbox {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: solid 0.2rem #999;
+  border-radius: 50%;
+  margin-right: 1rem;
+  padding-top: 1px;
+  /* Nudge for checkmark */
+  padding-left: 1px; }
+
+.checkbox-wrapper.is-complete .checkbox::after {
+  content: '\2713';
+  /* Unicode checkmark */ }
+
+@media (min-width: 768px) {
+  app-section:not(:last-child) {
+    margin-bottom: 3rem; }
+  section {
+    padding: 4rem;
+    padding-left: 7rem; }
+  .id-wrapper {
+    width: 8rem;
+    height: 8rem;
+    top: 50%;
+    left: 0; } }
+

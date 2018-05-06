@@ -41,6 +41,15 @@ module.exports = {
 						}
 					}
 				]
+			},
+			{
+				test: /\.tag$/,
+
+				use: [
+					{
+						loader: 'riot-tag-loader'
+					}
+				]
 			}
 		]
 	},

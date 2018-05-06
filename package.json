@@ -20,6 +20,9 @@
     "css-loader": "^0.28.11",
     "mini-css-extract-plugin": "^0.4.0",
     "node-sass": "^4.9.0",
+    "riot": "^3.9.5",
+    "riot-compiler": "^3.4.0",
+    "riot-tag-loader": "^2.0.2",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.5"
