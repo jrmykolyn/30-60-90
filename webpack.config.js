@@ -1,3 +1,12 @@
+// IMPORTS
+// Node
+const path = require( 'path' );
+
+// Vendor
+const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
+const UglifyJSPlugin = require( 'uglifyjs-webpack-plugin' );
+
+// CONFIG.
 module.exports = {
 	module: {
 		rules: [
@@ -38,14 +47,14 @@ module.exports = {
 
 	plugins: [
 		new UglifyJSPlugin(),
-		new MiniCssExtractPlugin({ filename: 'style.css' })
+		new MiniCssExtractPlugin({ filename: 'styles.css' })
 	],
-	entry: 0,
+	entry: './src/index.js',
 
 	output: {
-		filename: '[name].[chunkhash].js',
+		filename: 'bundle.js',
 		chunkFilename: '[name].[chunkhash].js',
-		path: path.resolve(__dirname, 'dist')
+		path: path.resolve(__dirname, 'docs')
 	},
 
 	mode: 'production'
