@@ -7,6 +7,10 @@ window.__INITIAL_STATE__ = {
 				title: 'Within the next <placeholder:30> days I will:',
 				items: [
 					{
+						title: 'Prepare a list of goals to accomplish within the next 30, 60, and 90 days.',
+						isComplete: true,
+					},
+					{
 						title: 'Pair with everyone on the Services team.',
 						isComplete: false,
 					},
