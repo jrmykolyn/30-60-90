@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0; }
 
+noscript {
+  padding: 2rem;
+  text-align: center; }
+
 html {
   background: #dfe8f3;
   font-size: 62.5%; }
