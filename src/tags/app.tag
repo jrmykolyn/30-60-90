@@ -1,22 +1,9 @@
 <app>
-	<header class="header">
-		<div class="header__inner">
-			<h1>30/60/90</h1>
-			<p>
-				30/60/90 is a simple RiotJS application which reads in and displays information about personal goals to be completed within the next 30, 60, and 90 days.
-			</p>
-		</div>
-	</header>
+	<app-header title={ data.title } description={ data.description }></app-header>
 	<main>
 		<app-section each={ goal in goals } data={ goal }></app-section>
 	</main>
-	<footer class="footer">
-		<div class="footer__inner">
-			<p>
-				<small>Prepared by Jesse R Mykolyn for GroupBy Inc.</small>
-			</p>
-		</div>
-	</footer>
+	<app-footer></app-footer>
 
 	<script>
 		this.data = this.opts.data || [];

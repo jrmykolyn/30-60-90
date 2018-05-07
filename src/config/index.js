@@ -1,6 +1,8 @@
 window.__INITIAL_STATE__ = {
 	data: {
 		initializedAt: 1525486266508,
+		title: '30/60/90',
+		description: '30/60/90 is a simple RiotJS application which reads in and displays information about personal goals to be completed within the next 30, 60, and 90 days.',
 		goals: [
 			{
 				id: 30,
