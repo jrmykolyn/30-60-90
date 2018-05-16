@@ -4,14 +4,7 @@
 			<h2>{ goal.id }</h2>
 		</div>
 		<h2>{ parent.parsePlaceholder( goal.title ) }</h2>
-		<ul>
-			<li each={ item, i in data.items }>
-				<div class="checkbox-wrapper { item.isComplete ? 'is-complete' : '' }">
-					<span class="checkbox"></span>
-					<p>{ item.title }</p>
-				</div>
-			</li>
-		</ul>
+		<app-list items={ data.items }></app-list>
 	</section>
 
 	<script>
