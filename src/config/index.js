@@ -23,12 +23,13 @@ window.__INITIAL_STATE__ = {
 							{ title: 'Shawna', isComplete: true },
 							{ title: 'Brandon', isComplete: false },
 							{ title: 'Greg', isComplete: true },
-							{ title: 'Beckah', isComplete: false },
-							{ title: 'Linda', isComplete: false },
+							{ title: 'Beckah', isComplete: true },
+							{ title: 'Linda', isComplete: true },
 							{ title: 'Geoff', isComplete: false },
 							{ title: 'Ryan', isComplete: false },
 							{ title: 'Dan', isComplete: false },
 							{ title: 'Mike', isComplete: false },
+							{ title: 'Meagan', isComplete: false },
 						],
 					},
 					{
@@ -36,12 +37,11 @@ window.__INITIAL_STATE__ = {
 						isComplete: false,
 					},
 					{
-						title: 'Submit a PR against @storefront',
-						isComplete: false,
-					},
-					{
 						title: 'Implement ESLint and SASS Lint within new repos.',
-						isComplete: false,
+						isComplete: true,
+						items: [
+							{ title: 'Signet', isComplete: true },
+						],
 					},
 					{
 						title: 'Participate in the creation of documentation re: Git flow and commit message conventions.',
@@ -51,6 +51,10 @@ window.__INITIAL_STATE__ = {
 						title: 'Prepare onboarding materials for new developers, including exercises which aim to get them up and running with RiotJS.',
 						isComplete: false,
 					},
+					{
+						title: 'Submit a PR against RefApp.',
+						isComplete: false,
+					},
 				],
 			},
 			{
@@ -58,7 +62,7 @@ window.__INITIAL_STATE__ = {
 				title: 'Within the next <placeholder:60> days I will:',
 				items: [
 					{
-						title: 'Submit a PR against RefApp.',
+						title: 'Submit a PR against Command Center.',
 						isComplete: false,
 					},
 				],
@@ -68,7 +72,7 @@ window.__INITIAL_STATE__ = {
 				title: 'Within the next <placeholder:90> days I will:',
 				items: [
 					{
-						title: 'Submit a PR against Command Center.',
+						title: 'Submit a PR against @storefront',
 						isComplete: false,
 					},
 					{
