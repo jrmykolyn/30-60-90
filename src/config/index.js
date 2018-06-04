@@ -13,23 +13,18 @@ window.__INITIAL_STATE__ = {
 						isComplete: true,
 					},
 					{
-						title: 'Pair with everyone on the Services team.',
-						isComplete: false,
+						title: 'Pair with everyone on the CVS team.',
+						isComplete: true,
 						items: [
 							{ title: 'Simon', isComplete: true },
 							{ title: 'Joey', isComplete: true },
 							{ title: 'Lindsay', isComplete: true },
 							{ title: 'Carlo', isComplete: true },
 							{ title: 'Shawna', isComplete: true },
-							{ title: 'Brandon', isComplete: false },
 							{ title: 'Greg', isComplete: true },
-							{ title: 'Beckah', isComplete: true },
 							{ title: 'Linda', isComplete: true },
-							{ title: 'Geoff', isComplete: false },
-							{ title: 'Ryan', isComplete: false },
-							{ title: 'Dan', isComplete: false },
-							{ title: 'Mike', isComplete: false },
-							{ title: 'Meagan', isComplete: false },
+							{ title: 'Ryan', isComplete: true },
+							{ title: 'Mike', isComplete: true },
 						],
 					},
 					{
@@ -41,6 +36,7 @@ window.__INITIAL_STATE__ = {
 						isComplete: true,
 						items: [
 							{ title: 'Signet', isComplete: true },
+							{ title: 'CVS (`cust_cvshealth`)', isComplete: true },
 						],
 					},
 					{
@@ -53,7 +49,10 @@ window.__INITIAL_STATE__ = {
 					},
 					{
 						title: 'Submit a PR against RefApp.',
-						isComplete: false,
+						isComplete: true,
+						items: [
+							{ title: 'Submit "clickable props" feature', isComplete: true },
+						]
 					},
 				],
 			},
