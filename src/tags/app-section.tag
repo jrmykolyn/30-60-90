@@ -3,7 +3,7 @@
 		<div class="id-wrapper">
 			<h2>{ goal.id }</h2>
 		</div>
-		<h2>{ parent.parsePlaceholder( goal.title ) }</h2>
+		<h2>{ parent.parsePlaceholder( goal ) }</h2>
 		<app-list items={ data.items }></app-list>
 	</section>
 

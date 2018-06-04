@@ -9,11 +9,25 @@
 		this.data = this.opts.data || [];
 		this.goals = this.data.goals || [];
 
-		this.parsePlaceholder = ( str ) => {
-			let pattern = /\<placeholder:([0-9]+)\>/gmi;
-			let matches = pattern.exec( str );
+		this.parsePlaceholder = ( goal = {} ) => {
+			let {
+				value = 0,
+			} = goal;
 
-			return ( matches && matches.length ) ? str.replace( matches[ 0 ], this.getRemainingDays( +matches[ 1 ] ) ) : str;
+			if ( !value ) {
+				return 'Whoops, something went wrong!';
+			}
+
+			let remaining = this.getRemainingDays( value );
+			let pattern = /\<placeholder\>/gmi;
+
+			if ( remaining <= 0 ) {
+				let matches = pattern.exec( this.data.titleBehind );
+				return ( matches && matches.length ) ? this.data.titleBehind.replace( matches[ 0 ], Math.abs( remaining ) ) : this.data.titleBehind;
+			} else {
+				let matches = pattern.exec( this.data.titleAhead );
+				return ( matches && matches.length ) ? this.data.titleAhead.replace( matches[ 0 ], remaining ) : this.data.titleAhead;
+			}
 		};
 
 		this.getRemainingDays = ( days ) => {

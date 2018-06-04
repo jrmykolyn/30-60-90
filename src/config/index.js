@@ -3,10 +3,12 @@ window.__INITIAL_STATE__ = {
 		initializedAt: 1525486266508,
 		title: '30/60/90',
 		description: '30/60/90 is a simple RiotJS application which reads in and displays information about personal goals to be completed within the next 30, 60, and 90 days.',
+		titleAhead: 'Within the next <placeholder> days I will:',
+		titleBehind: 'I should have completed the following <placeholder> days ago:',
 		goals: [
 			{
 				id: 30,
-				title: 'Within the next <placeholder:30> days I will:',
+				value: 30,
 				items: [
 					{
 						title: 'Prepare a list of goals to accomplish within the next 30, 60, and 90 days.',
@@ -58,7 +60,7 @@ window.__INITIAL_STATE__ = {
 			},
 			{
 				id: 60,
-				title: 'Within the next <placeholder:60> days I will:',
+				value: 60,
 				items: [
 					{
 						title: 'Submit a PR against Command Center.',
@@ -68,7 +70,7 @@ window.__INITIAL_STATE__ = {
 			},
 			{
 				id: 90,
-				title: 'Within the next <placeholder:90> days I will:',
+				value: 90,
 				items: [
 					{
 						title: 'Submit a PR against @storefront',
